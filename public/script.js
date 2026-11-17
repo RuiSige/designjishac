@@ -1,4 +1,11 @@
-const categories=[{id:'logo',name:'LOGO DESIGN'},{id:'package',name:'PACKAGE DESIGN'},{id:'print',name:'PRINT DESIGN'},{id:'illustration',name:'ILLUSTRATION'},{id:'goods',name:'GOODS'}];
+const categories = [
+  { id: 'logo', name: 'LOGO DESIGN' },
+  { id: 'package', name: 'PACKAGE DESIGN' },
+  { id: 'print', name: 'PRINT DESIGN' },
+  { id: 'illustration', name: 'ILLUSTRATION' },
+  { id: 'goods', name: 'GOODS' },
+  { id: 'website', name: 'WEB SITE' }
+];
 const gallery=document.querySelector('#gallery');const dialog=document.querySelector('#work-dialog');let activeWorks=[],activeIndex=0;
 const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 for(const category of categories){const section=document.createElement('section');section.className='category';section.id=category.id;const heading=document.createElement('h3');heading.textContent=category.name;section.append(heading);const items=works.filter(w=>w.category===category.id);if(!items.length){const empty=document.createElement('div');empty.className='empty';empty.textContent='COMING SOON';section.append(empty);}else{const grid=document.createElement('div');grid.className='work-grid';items.forEach((work,index)=>{const button=document.createElement('button');button.className='work';button.type='button';button.setAttribute('aria-label',`${work.title}を表示`);const thumb=document.createElement('span');thumb.className='thumb';const img=document.createElement('img');img.src=work.image;img.alt=work.title;img.loading='lazy';thumb.append(img);const label=document.createElement('span');label.className='work-title';label.textContent=work.title;button.append(thumb,label);button.addEventListener('click',()=>{activeWorks=items;activeIndex=index;showWork();dialog.showModal()});grid.append(button)});section.append(grid)}gallery.append(section)}
