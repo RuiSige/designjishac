@@ -6,6 +6,19 @@
   <meta name="description" content="designJishacのグラフィックデザイン・イラストレーション作品集">
   <title>designJishac | Graphic Design & Illustration</title>
   <link rel="stylesheet" href="/style.css">
+  <style>
+    .intro-section{padding-top:38px;padding-bottom:12px}
+    .intro-section p{font-size:14px;line-height:2.1;margin:0}
+    .profile-name{font-size:21px;letter-spacing:.16em;margin:28px 0 4px}
+    .profile-realname{margin:0 0 18px;font-size:13px}
+    .profile-lead{line-height:2;margin:0 0 12px}
+    .profile-timeline{list-style:none;padding:0;margin:34px 0;max-width:850px}
+    .profile-timeline li{display:grid;grid-template-columns:75px 1fr;gap:12px;margin-bottom:12px;font-size:14px;line-height:1.9}
+    .profile-services{margin-top:24px;padding-top:20px;border-top:1px solid var(--line,#e9dfd4)}
+    .profile-services h3{font-size:16px;margin:0 0 12px}
+    .profile-services p{line-height:2}
+    @media(max-width:650px){.intro-section{padding-top:28px;padding-bottom:0}.intro-section p{font-size:13px}.profile-timeline li{grid-template-columns:65px 1fr;gap:8px;font-size:13px}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -19,6 +32,12 @@
     </nav>
   </header>
   <main id="top">
+    <section class="section intro-section" aria-label="designJishacについて">
+      <p>しまなみ界隈の農家さんやものづくりをされている方からご依頼をいただき、<br>
+      ロゴ・パッケージ・パンフレットなどのデザイン制作をしています。<br>
+      島のお土産になるようなステッカーやポストカードなど、<br>
+      オリジナル商品の制作も行っています。</p>
+    </section>
     <section id="works" class="section works-section">
       <h1>WORKS</h1>
       <p class="works-subtitle">Graphic Design &amp; Illustration</p>
@@ -32,8 +51,23 @@
       <div id="gallery"></div>
     </section>
     <section id="about" class="section info">
-      <h2>ABOUT</h2>
-      <p>designJishacは、ロゴ・パッケージ・印刷物・イラストなどのデザインを制作しています。</p>
+      <h2>PROFILE</h2>
+      <h3 class="profile-name">R u i.</h3>
+      <p class="profile-realname">（重信 瑠依）</p>
+      <p class="profile-lead">design Jishac デザイナー／レザークラフトJishac 作家。<br>
+      埼玉県川越市出身。愛媛県大三島在住。</p>
+      <ol class="profile-timeline">
+        <li><span>2012年</span><span>Jishac（ジシャク）として革小物の製作活動を開始。</span></li>
+        <li><span>2013年</span><span>愛媛県今治市にある大三島へ夫婦で移住。</span></li>
+        <li><span>2014年</span><span>地域の新しい資源として、大三島・伯方島で捕獲されたイノシシの皮を革素材として活用し、夫婦で製作・販売を開始。</span></li>
+        <li><span>2018年</span><span>自宅兼工房の前にギャラリーをオープン。</span></li>
+        <li><span>2020年</span><span>革以外の素材やオリジナルデザインを用いた商品を展開するために、design Jishacを立ち上げる。</span></li>
+      </ol>
+      <p>しまなみ界隈の農家さんや事業者様から依頼を受け、<br>商品パッケージやロゴデザインなどを手掛ける。</p>
+      <div class="profile-services">
+        <h3>できること</h3>
+        <p>ロゴ／商品ラベル／チラシ・パンフレット／ステッカー<br>ポストカード／名刺／キャラクターデザイン など</p>
+      </div>
     </section>
     <section id="contact" class="section info">
       <h2>CONTACT</h2>
