@@ -149,3 +149,46 @@ dialog::backdrop{background:#211b17bd}
     font-size: 10px;
   }
 }
+
+/* 全体の文字色・ラインを焦げ茶に統一 */
+:root {
+  --ink: #4A3022;
+  --muted: #4A3022;
+  --line: #4A3022;
+}
+
+/* 基本の文字色 */
+body {
+  color: #4A3022;
+}
+
+/* ヘッダー・カテゴリーの文字 */
+.site-header nav a,
+.category-nav a,
+.category h3,
+.work-title,
+.info,
+footer {
+  color: #4A3022;
+}
+
+/* カテゴリータブの枠線 */
+.category-nav {
+  border-bottom-color: #4A3022;
+}
+
+.category-nav a {
+  color: #4A3022;
+  border-color: #4A3022;
+}
+
+/* ボタンの枠線と文字 */
+.modal-controls button,
+.close {
+  color: #4A3022;
+}
+
+/* 区切り線 */
+.info {
+  border-top-color: #4A3022;
+}
