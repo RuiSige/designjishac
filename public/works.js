@@ -1,5 +1,7 @@
-// 作品を追加するときは、下の配列に1件ずつ追加してください。
-// image は public/images/ に保存した画像のパスです。
-// 例: { category: "logo", title: "〇〇店のロゴ", image: "/images/logo-001.jpg", description: "ロゴデザイン" },
+// designJishac 作品一覧。画像は public/images/ に配置してください。
 const works = [
+  { category: "logo", title: "ギャラリー貝", image: "/images/logo-gallery-kai.png", description: "" },
+  { category: "logo", title: "島シシレザー", image: "/images/logo-shimashishi.png", description: "" },
+  { category: "logo", title: "Jishac", image: "/images/logo-jishac.png", description: "" },
+  { category: "logo", title: "しまなみかぶぬしミーティング", image: "/images/logo-cubnushi-meeting.png", description: "" },
 ];
