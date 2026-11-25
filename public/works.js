@@ -1,5 +1,9 @@
 // designJishac 作品一覧。画像は public/images/ に配置してください。
 const works = [
+  { category: "logo", title: "ギャラリー自尺", image: "/images/logo-gallery-kai.png", description: "" },
+  { category: "logo", title: "島シシレザー", image: "/images/logo-shimashishi.png", description: "" },
+  { category: "logo", title: "Jishac", image: "/images/logo-jishac.png", description: "" },
+  { category: "logo", title: "しまなみかぶぬしミーティング", image: "/images/logo-cubnushi-meeting.png", description: "" },
   { category: "logo", title: "1plus7", image: "/images/logo-1plus7.png", description: "" },
   { category: "logo", title: "9911", image: "/images/logo-9911.jpg", description: "" },
   { category: "logo", title: "DRONElab", image: "/images/logo-DRONElab.jpg", description: "" },
