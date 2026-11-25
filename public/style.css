@@ -210,3 +210,25 @@ footer {
 .category-nav a:hover {
   border-bottom-color: #fff;
 }
+
+/* 作品一覧：画像を小さくして余白を広げる */
+.work-grid {
+  column-gap: 30px;
+  row-gap: 42px;
+}
+
+.thumb {
+  padding: 10%;
+}
+
+/* スマートフォン */
+@media (max-width: 650px) {
+  .work-grid {
+    column-gap: 18px;
+    row-gap: 28px;
+  }
+
+  .thumb {
+    padding: 8%;
+  }
+}
