@@ -237,3 +237,7 @@ footer {
   padding-top: 10px;
   margin-top: -10px;
 }
+/* 作品タイトルの文字色 */
+.work-title {
+  color: #8b7769;
+}
